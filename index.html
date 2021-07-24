@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset=”UTF8”> 
+        <title>Atividade de IMC </title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IMC</title>
+    </head>
+    <style>
+
+    </style>
+
+  <body>
+        <h1 style="text-align: center;"> IMC </h1>
+        <p style="font-size: 20px;">Magreza = abaixo <strong>18,5Kg/ m2</strong></p>
+        <p>Normal = entre <strong>18,5Kg/m2</strong> e <strong>24,9Kg/ m2</strong></p>
+        <p style="font-size: 20px;">Sobrepeso = entre <strong>24,9 Kg/m2</strong> e <strong>30Kg/ m2</strong></p>
+        <p style="font-size: 20px;">Obesidade = acima <strong>30Kg/ m2</strong></p>
+        <div class="calculadora">
+          <h1>Calculadora</h1>
+          <div class="form">
+            <label for="">Peso(kg)</label><br>
+            <input type="text" id="txtPeso" placeholder="ex:70.2"><br><br>
+            <label for="">Altura(m)</label><br>
+            <input type="text" id="txtAltura" placeholder="ex:1.70"><br><br>
+            <input type="submit" value="Calcular" class="calcular" onclick="calcular()">
+
+        </div>
+        <p id="resultado">.</p>
+        <div class="categorias">
+          <div id="Magreza">Magreza</div>
+          <div id="Normal">Normal</div>
+          <div id="Sobrepeso">Sobrepeso</div>
+          <div id="Obesidade">Obesidade</div>
+
+        </div>
+      </div>
+  </body>
+</html>
